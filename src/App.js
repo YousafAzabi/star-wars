@@ -42,7 +42,8 @@ class App extends React.Component {
       type: event.target.value,
       playerOne: null,
       playerTwo: null,
-      winningAttribute: ''
+      winningAttribute: '',
+      isNewdisabled: false,
     });
   }
 
@@ -64,31 +65,23 @@ class App extends React.Component {
   }
 
   handlePlayClick = () => {
-    const winner = func.getWinner(this.state.playerOne, this.state.playerTwo, this.state.winningAttribute);
+    let winner = func.getWinner(this.state.playerOne, this.state.playerTwo, this.state.winningAttribute);
+    let playerOneWins = this.state.playerOneWins;
+    let playerTwoWins = this.state.playerTwoWins;
     if (winner === 'Player One Wins') {
-      const playerOneWins = this.state.playerOneWins + 1;
-      this.setState({
-        playerOneWins,
-        isPlayerTwoDisabled: true,
-        isNewdisabled: false,
-        isPlayDisabled: true
-      });
+      playerOneWins++;
     } else if(winner === 'Player Two Wins') {
-      const playerTwoWins = this.state.playerTwoWins + 1;
-      this.setState({
-        playerTwoWins,
-        isPlayerTwoDisabled: true,
-        isNewdisabled: false,
-        isPlayDisabled: true
-       });
+      playerTwoWins++;
     } else {
-      this.setState({
-        isPlayerTwoDisabled: true,
-        isNewdisabled: false,
-        isPlayDisabled: true
-      });
       winner = ('The result is draw.');
     }
+    this.setState({
+      playerOneWins,
+      playerTwoWins,
+      isPlayerTwoDisabled: true,
+      isNewdisabled: false,
+      isPlayDisabled: true
+     });
     alert(winner);
   }
 
