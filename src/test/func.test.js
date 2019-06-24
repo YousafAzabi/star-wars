@@ -2,10 +2,10 @@ import func from '../func/index';
 
 describe('Testing Functions in "func" folder', () => {
   describe('Testing fetchData', () => {
-    // test('Testing when type is in API', async () => {
-    //   const type = 'people'
-    //   expect( await func.fetchData(type)).not.toBeNull();
-    // });
+    test('Testing when type is in API', async () => {
+      const type = 'people'
+      expect( await func.fetchData(type)).not.toBeNull();
+    });
 
     test('Testing when type is NOT in API', async () => {
       const type = 'foo'

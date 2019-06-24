@@ -2,28 +2,6 @@
 
 exports[`Player component it matches the snapshot 1`] = `
 <div
-<<<<<<< HEAD
-  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Player-card-1 MuiPaper-rounded"
->
-  <div
-    className="MuiCardContent-root"
-  >
-    <span
-      className="MuiBadge-root Player-badge-2"
-    >
-       
-      <span
-        className="MuiBadge-badge MuiBadge-colorPrimary"
-      >
-        mass
-      </span>
-    </span>
-    <p
-      className="MuiTypography-root MuiTypography-body1"
-    >
-      Player One
-    </p>
-=======
   className="Player-card-1"
 >
   <div
@@ -44,7 +22,6 @@ exports[`Player component it matches the snapshot 1`] = `
         mass
       </span>
     </h5>
->>>>>>> used BootStrap
     <ul
       className="MuiList-root MuiList-padding"
     >
