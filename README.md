@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/YousafAzabi/star-wars.svg?branch=master)](https://travis-ci.com/YousafAzabi/star-wars)
+
 In this project the Star Wars API (SWAPI) is used to design the game.
 A working demo of the project can be [found here](https://star-wars-2019.firebaseapp.com/).
 
