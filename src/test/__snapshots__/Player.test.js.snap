@@ -2,6 +2,7 @@
 
 exports[`Player component it matches the snapshot 1`] = `
 <div
+<<<<<<< HEAD
   className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Player-card-1 MuiPaper-rounded"
 >
   <div
@@ -22,6 +23,28 @@ exports[`Player component it matches the snapshot 1`] = `
     >
       Player One
     </p>
+=======
+  className="Player-card-1"
+>
+  <div
+    className="card-body"
+  >
+    <h5
+      className="card-title"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Player One
+      <span
+        className="badge badge-secondary"
+      >
+        mass
+      </span>
+    </h5>
+>>>>>>> used BootStrap
     <ul
       className="MuiList-root MuiList-padding"
     >

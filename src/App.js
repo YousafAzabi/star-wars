@@ -1,5 +1,8 @@
 import React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> used BootStrap
 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -149,6 +152,7 @@ class App extends React.Component {
       </div>
     );
   }
+<<<<<<< HEAD
 }
 
 export default withStyles(styles)(App);
@@ -179,3 +183,8 @@ function App() {
 
 export default App;
 >>>>>>> Initial commit from Create React App
+=======
+}
+
+export default withStyles(styles)(App);
+>>>>>>> used BootStrap
