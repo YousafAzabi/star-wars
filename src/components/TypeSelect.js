@@ -20,6 +20,7 @@ class TypeSelect extends React.Component {
 
   render() {
     const { classes, handleChange } = this.props;
+    
     return (
       <FormControl className={classes.formControl}>
         <InputLabel htmlFor="demo-controlled-open-select">Collection</InputLabel>

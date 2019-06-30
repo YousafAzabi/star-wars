@@ -31,8 +31,8 @@ class App extends React.Component {
       playerTwo: null,
       playerOneWins: 0,
       playerTwoWins: 0,
-      isPlayerTwoDisabled: false,
-      isNewdisabled: false,
+      isPlayerTwoDisplayed: false,
+      isNewDisabled: false,
       isPlayDisabled: true,
     };
   }
@@ -43,7 +43,7 @@ class App extends React.Component {
       playerOne: null,
       playerTwo: null,
       winningAttribute: '',
-      isNewdisabled: false,
+      isNewDisabled: false,
     });
   }
 
@@ -58,8 +58,8 @@ class App extends React.Component {
     this.setState({
       playerOne,
       playerTwo,
-      isPlayerTwoDisabled: false,
-      isNewdisabled: true,
+      isPlayerTwoDisplayed: false,
+      isNewDisabled: true,
       isPlayDisabled: false,
     });
   }
@@ -78,8 +78,8 @@ class App extends React.Component {
     this.setState({
       playerOneWins,
       playerTwoWins,
-      isPlayerTwoDisabled: true,
-      isNewdisabled: false,
+      isPlayerTwoDisplayed: true,
+      isNewDisabled: false,
       isPlayDisabled: true
      });
     alert(winner);
@@ -117,7 +117,7 @@ class App extends React.Component {
             details={this.state.playerOne}
             winningAttribute={this.state.winningAttribute}
           />
-          <Player isDisplayed={this.state.isPlayerTwoDisabled}
+          <Player isDisplayed={this.state.isPlayerTwoDisplayed}
             title='Player Two'
             type={this.state.type}
             details={this.state.playerTwo}
@@ -129,7 +129,7 @@ class App extends React.Component {
         </Typography>
         <div className={classes.buttonContainer}>
           <Button
-            disabled={(this.state.type === '') || this.state.isNewdisabled}
+            disabled={(this.state.type === '') || this.state.isNewDisabled}
             className={classes.button}
             onClick={this.handleNewClick}
           >
